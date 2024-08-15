@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "localization.html",
+    "href": "localization.html",
+    "title": "Installations",
+    "section": "",
+    "text": "Most of the data journalism that goes on day after day is local. People care about where they live. So in order to make these tutorials more meaningful to you, I’ve developed a system where you can localize them to your state. Now you don’t have to do this – they will work if you don’t. But if you don’t, every tutorial is going to be about the great state of Nebraska, my home. If you’re fortunate enough to be from the greatest state in the Union, you can do nothing. If you’re from somewhere else and want your tutorials to about that place, do the following."
+  },
+  {
+    "objectID": "localization.html#step-1-edit-your-r-environment.",
+    "href": "localization.html#step-1-edit-your-r-environment.",
+    "title": "Installations",
+    "section": "Step 1: Edit your R environment.",
+    "text": "Step 1: Edit your R environment.\nOpen R Studio and go to the console. You may or may not have usethis installed, but getting it is easy. Copy this, paste it into the console and hit enter:\ninstall.packages(\"usethis\")\nNow, copy this, paste it into the console and hit enter:\nusethis::edit_r_environ()\nIf you’ve never done this before, a blank document will open up. If you have done this before, you should see your previous entries into your .Renviron. On the first empty line of your document, add this:\ntutorial.state = \"XX\"\nReplace XX with the postal abbreviation of your state. So if you’re from Florida, it’s FL. If you’re from Vermont, it’s VT.\nOnce you’ve done that, save the file and close it."
+  },
+  {
+    "objectID": "localization.html#step-2-check-on-your-work.",
+    "href": "localization.html#step-2-check-on-your-work.",
+    "title": "Installations",
+    "section": "Step 2: Check on your work.",
+    "text": "Step 2: Check on your work.\nIn the first tutorial, the basics, there’s a welcome message at the top greeting you.\nGo to the Tutorial tab, find The Basics, and click Start Tutorial. If you see your state there, you’re good to go."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The Art of Data Journalism",
+    "section": "",
+    "text": "Want to work data into your journalism? This collection of interactive tutorials covers the essential skills and concepts. From basic data analysis to creating compelling visualizations, these lessons will help you:\n\nMaster key tools like R, ggplot2, and Datawrapper\nLearn data cleaning, joining, and aggregation techniques\nCreate professional charts, maps, and other visualizations\nEffectively communicate data-driven stories\n\nWhether you’re a journalism student or working professional looking to expand your skillset, these hands-on tutorials will give you the practical knowledge to find and tell impactful stories with data."
+  },
+  {
+    "objectID": "index.html#become-a-news-nerd-interactively",
+    "href": "index.html#become-a-news-nerd-interactively",
+    "title": "The Art of Data Journalism",
+    "section": "",
+    "text": "Want to work data into your journalism? This collection of interactive tutorials covers the essential skills and concepts. From basic data analysis to creating compelling visualizations, these lessons will help you:\n\nMaster key tools like R, ggplot2, and Datawrapper\nLearn data cleaning, joining, and aggregation techniques\nCreate professional charts, maps, and other visualizations\nEffectively communicate data-driven stories\n\nWhether you’re a journalism student or working professional looking to expand your skillset, these hands-on tutorials will give you the practical knowledge to find and tell impactful stories with data."
+  },
+  {
+    "objectID": "index.html#what-you-need",
+    "href": "index.html#what-you-need",
+    "title": "The Art of Data Journalism",
+    "section": "What you need",
+    "text": "What you need\nEverything you need is free. Follow the complete installation instructions to get R, R Studio, LearnR and the tutorials installed on your machine.\nFrom there, you’ll need to add a couple of bits about you to take advantage of features of the tutorials. Add what state you live in and what university you go to (or went to) and the tutorials will rewrite themselves to highlight trends where you live and what you care about. Nothing makes learning better than caring about the outcome."
+  },
+  {
+    "objectID": "index.html#about-the-author",
+    "href": "index.html#about-the-author",
+    "title": "The Art of Data Journalism",
+    "section": "About the author",
+    "text": "About the author\nMatt Waite is a professor of practice in the College of Journalism and Mass Communications at the University of Nebraska-Lincoln who teaches courses in AI, data analysis and visualization. He regularly speaks on and consults media organizations about the legal, ethical and journalistic complexities of using drones, data and technology. From 2007-2011, he was a programmer/journalist for the St. Petersburg Times where he developed the website PolitiFact, winner of the 2009 Pulitzer Prize for national reporting. Before that, he was an award-winning investigative reporter and co-author of Paving Paradise: Florida’s Vanishing Wetlands and the Failure of No Net Loss."
+  },
+  {
+    "objectID": "index.html#about-the-tutorials",
+    "href": "index.html#about-the-tutorials",
+    "title": "The Art of Data Journalism",
+    "section": "About the tutorials",
+    "text": "About the tutorials\nThese tutorials have been developed in the classroom, semester over semester, as part of the University of Nebraska-Lincoln’s College of Journalism and Mass Communications’ JOUR 307 Data Journalism course. The current version, with the localization and this site, were created as part of a faculty development leave in Fall 2024."
+  },
+  {
+    "objectID": "installations.html",
+    "href": "installations.html",
+    "title": "Installations",
+    "section": "",
+    "text": "You’re going to do things most of you aren’t used to doing with your computer in these tutorials. In order to do that, you need to update your computer. This isn’t required, it’s just very good practice. Many of my students have never done it before (and wonder why their computer runs so slow or crashes so often).\nIf, for some reason, you can’t update, don’t worry. Everything should still work. If you’re on a really old operating system, that might cause problems later with installing R Studio, but just install a version that will work on your machine and it will be fine. If your computer is less than 7 years old, this should all work."
+  },
+  {
+    "objectID": "installations.html#part-1-update-your-operating-system",
+    "href": "installations.html#part-1-update-your-operating-system",
+    "title": "Installations",
+    "section": "Part 1: Update your operating system",
+    "text": "Part 1: Update your operating system\nOn a Mac:\n\nOpen System Preferences.\nDepending on how old your Mac OS is, you might see this:\n\n\nOr you might see this:\n\n\nCheck and see if you have the latest version of the Mac OS installed. If your computer says “Your Mac is up to date”, then you’re good to go, regardless of what comes next.\nIf you aren’t on Sonoma and you can update to it, you should do it. This will take some time – hours, so don’t do it when you need your laptop – but it’s important for you and your computer to stay up to date on operating systems.\nWhen you’re done, make sure you click the Automatically keep my Mac up to date box and install those updates regularly. Don’t ignore them. Don’t snooze them. Install them.\nWith an up-to-date operating system, now install the command line tools. To do this, click on the magnifying glass in the top right of the screen and type terminal. Hit enter – the first entry is the terminal app.\nIn the terminal app, type xcode-select --install and hit enter. Let it run.\n\n\nOn Windows:\n\nType Updates into the Cortana search then click Check for updates\n\n\n\nAfter the search for updates completes, apply any that you have. Depending on if you’d done this recently or if you have automatic updates set, this might take a long time or go very quickly.\n\n\n\nWhen you’re done, make sure you set up automatic updates for your Windows machine and install those updates regularly. Don’t ignore them. Don’t snooze them. Install them."
+  },
+  {
+    "objectID": "installations.html#part-2-install-r-and-r-studio",
+    "href": "installations.html#part-2-install-r-and-r-studio",
+    "title": "Installations",
+    "section": "Part 2: Install R and R Studio",
+    "text": "Part 2: Install R and R Studio\n\nGo here. Go to Step 1 and click Download and Install R\n\nIf you’re on a Mac, click on Download R for MacOS. If you have a newer Mac with an M1/M2/M3 chip, you want the arm64 version. If you’re on an older Mac with an Intel chip, you want the X86_64 version.\nIf you’re on Windows, install the base package AND install Rtools. When either downloads, run the executable and accept the defaults and license agreement.\n\n\nGo back to here. Go to Step 2 and click R Studio Desktop for your version.\n\nMac users:\n\n\n\nMake sure you drag the R Studio icon into the Applications folder icon.\n\n\nWindows users:\nYou can find it by typing RStudio into the Cortana search."
+  },
+  {
+    "objectID": "installations.html#part-3-installing-r-libraries",
+    "href": "installations.html#part-3-installing-r-libraries",
+    "title": "Installations",
+    "section": "Part 3: Installing R libraries",
+    "text": "Part 3: Installing R libraries\n\nOpen R Studio. It should show the Console view by default. We’ll talk a lot more about the console later.\nCopy and paste this into the console and hit enter:\n\ninstall.packages(c(\"tidyverse\", \"rmarkdown\", \"lubridate\", \"janitor\", \"learnr\", \"remotes\", \"devtools\", \"waffle\", \"ggrepel\", \"ggbeeswarm\", \"ggbump\", \"ggalt\", \"ggtext\", \"rvest\"))"
+  },
+  {
+    "objectID": "installations.html#part-4-install-the-tutorials",
+    "href": "installations.html#part-4-install-the-tutorials",
+    "title": "Installations",
+    "section": "Part 4: Install the tutorials",
+    "text": "Part 4: Install the tutorials\nTo get the tutorials, do the following.\n\nOpen R Studio. \nR Studio defaults to the console view. This is good, This is where you want to be.\n\n\n\nIn the console, enter the following:\ndevtools::install_github(\"mattwaite/DataJournalismTutorials\", force=TRUE)\nYou should see some automated output. If you are told there are newer libraries and asked if you want to install them, just hit enter. When it is done, quit R Studio and restart it. This is what it will look like when done."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  }
+]
