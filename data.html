@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Installations – The Art of Data Journalism</title>
+<title>Data – The Art of Data Journalism</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,10 +69,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Installations – The Art of Data Journalism">
+<meta property="og:title" content="Data – The Art of Data Journalism">
 <meta property="og:description" content="">
 <meta property="og:site_name" content="The Art of Data Journalism">
-<meta name="twitter:title" content="Installations – The Art of Data Journalism">
+<meta name="twitter:title" content="Data – The Art of Data Journalism">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="http://imageurltocome.png">
 <meta name="twitter:creator" content="@mattwaite">
@@ -108,11 +108,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Installation</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./localization.html" aria-current="page"> 
+    <a class="nav-link" href="./localization.html"> 
 <span class="menu-text">Localization</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./data.html"> 
+    <a class="nav-link active" href="./data.html" aria-current="page"> 
 <span class="menu-text">Data</span></a>
   </li>  
 </ul>
@@ -131,8 +131,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-1-edit-your-r-environment." id="toc-step-1-edit-your-r-environment." class="nav-link active" data-scroll-target="#step-1-edit-your-r-environment.">Step 1: Edit your R environment.</a></li>
-  <li><a href="#step-2-check-on-your-work." id="toc-step-2-check-on-your-work." class="nav-link" data-scroll-target="#step-2-check-on-your-work.">Step 2: Check on your work.</a></li>
+  <li><a href="#census-population-estimates-by-county" id="toc-census-population-estimates-by-county" class="nav-link active" data-scroll-target="#census-population-estimates-by-county">Census Population Estimates by County</a></li>
+  <li><a href="#usda-rural-development-investments-data" id="toc-usda-rural-development-investments-data" class="nav-link" data-scroll-target="#usda-rural-development-investments-data">USDA Rural Development Investments Data</a></li>
+  <li><a href="#ntsb-airplane-crash-data" id="toc-ntsb-airplane-crash-data" class="nav-link" data-scroll-target="#ntsb-airplane-crash-data">NTSB Airplane Crash Data</a></li>
+  <li><a href="#u.s.-department-of-education-college-scorecard-data" id="toc-u.s.-department-of-education-college-scorecard-data" class="nav-link" data-scroll-target="#u.s.-department-of-education-college-scorecard-data">U.S. Department of Education College Scorecard Data</a></li>
+  <li><a href="#u.s.-census-bureau-small-area-health-insurance-estimates-sahie-program" id="toc-u.s.-census-bureau-small-area-health-insurance-estimates-sahie-program" class="nav-link" data-scroll-target="#u.s.-census-bureau-small-area-health-insurance-estimates-sahie-program">U.S. Census Bureau Small Area Health Insurance Estimates (SAHIE) Program</a></li>
+  <li><a href="#u.s.-environmental-protection-agency-greenhouse-gas-reporting-program-data" id="toc-u.s.-environmental-protection-agency-greenhouse-gas-reporting-program-data" class="nav-link" data-scroll-target="#u.s.-environmental-protection-agency-greenhouse-gas-reporting-program-data">U.S. Environmental Protection Agency Greenhouse Gas Reporting Program Data</a></li>
+  <li><a href="#national-conference-of-state-legislatures-data-on-state-legislative-partisan-composition" id="toc-national-conference-of-state-legislatures-data-on-state-legislative-partisan-composition" class="nav-link" data-scroll-target="#national-conference-of-state-legislatures-data-on-state-legislative-partisan-composition">National Conference of State Legislatures Data on State Legislative Partisan Composition</a></li>
+  <li><a href="#groundhog-day-predictions-dataset-from-groundhog-day.com" id="toc-groundhog-day-predictions-dataset-from-groundhog-day.com" class="nav-link" data-scroll-target="#groundhog-day-predictions-dataset-from-groundhog-day.com">Groundhog Day Predictions Dataset from Groundhog-Day.com</a></li>
   </ul>
 </nav>
     </div>
@@ -141,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Installations</h1>
+<h1 class="title">Data</h1>
 </div>
 
 
@@ -158,24 +164,38 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Most of the data journalism that goes on day after day is local. People care about where they live. So in order to make these tutorials more meaningful to you, I’ve developed a system where you can localize them to your state. Now you don’t <em>have</em> to do this – they will work if you don’t. But if you don’t, every tutorial is going to be about the great state of Nebraska, my home. If you’re fortunate enough to be from the greatest state in the Union, you can do nothing. If you’re from somewhere else and want your tutorials to about that place, do the following.</p>
-<section id="step-1-edit-your-r-environment." class="level2">
-<h2 class="anchored" data-anchor-id="step-1-edit-your-r-environment.">Step 1: Edit your R environment.</h2>
-<p>Open R Studio and go to the console. You may or may not have <code>usethis</code> installed, but getting it is easy. Copy this, paste it into the console and hit enter:</p>
-<p><code>install.packages("usethis")</code></p>
-<p>Now, copy this, paste it into the console and hit enter:</p>
-<p><code>usethis::edit_r_environ()</code></p>
-<p>If you’ve never done this before, a blank document will open up. If you have done this before, you should see your previous entries into your <code>.Renviron</code>. On the first empty line of your document, add this:</p>
-<p><code>tutorial.state = "XX"</code></p>
-<p>Replace XX with the postal abbreviation of your state. So if you’re from Florida, it’s FL. If you’re from Vermont, it’s VT.</p>
-<p>Once you’ve done that, save the file and close it.</p>
-<p>Then, quit R Studio. Start it back up. You have to do this for your new R environment to get loaded in.</p>
+<p>Here are the data sources used throughout the tutorials, in order of appearance:</p>
+<section id="census-population-estimates-by-county" class="level3">
+<h3 class="anchored" data-anchor-id="census-population-estimates-by-county"><a href="https://www.census.gov/data/datasets/time-series/demo/popest/2020s-counties-total.html">Census Population Estimates by County</a></h3>
+<p>A classic dataset used in data journalism education. From the Census Bureau’s Population Estimates office.</p>
 </section>
-<section id="step-2-check-on-your-work." class="level2">
-<h2 class="anchored" data-anchor-id="step-2-check-on-your-work.">Step 2: Check on your work.</h2>
-<p>In the first tutorial, the basics, there’s a welcome message at the top greeting you.</p>
-<p>Go to the Tutorial tab, find The Basics, and click <code>Start Tutorial</code>. In the section called The Goal, you should see “Welcome, student from …” and your state’s name. If you don’t see your state, something went wrong. The default state is Nebraska. That means if you don’t set a state, you’re from Nebraska now. Why Nebraska? That’s where I teach, so that’s what I set as the failure condition. Welcome, new Husker. We’re very friendly. You’re going to love it here.</p>
-<p>If cheering for Dear Old Nebraska U isn’t your jam, go back to the top and try again.</p>
+<section id="usda-rural-development-investments-data" class="level3">
+<h3 class="anchored" data-anchor-id="usda-rural-development-investments-data"><a href="https://www.rd.usda.gov/rural-data-gateway/rural-investments/data">USDA Rural Development Investments Data</a></h3>
+<p>Data from the USDA covering grants, loans and other “investments” from the agency. Full data covers 2012 to 2024, though the tutorials use only 5 years. <a href="https://www.rd.usda.gov/media/file/download/opendatadashboard-dictionarypdf">There is a data dictionary if needed</a>.</p>
+</section>
+<section id="ntsb-airplane-crash-data" class="level3">
+<h3 class="anchored" data-anchor-id="ntsb-airplane-crash-data"><a href="https://www.ntsb.gov/Pages/AviationQueryV2.aspx">NTSB Airplane Crash Data</a></h3>
+<p>The National Transportation Safety Board has civilian accident investigations going back to 1962 searchable online. The tutorials only use the last 5 years. Once you enter a search, the results are downloadable.</p>
+</section>
+<section id="u.s.-department-of-education-college-scorecard-data" class="level3">
+<h3 class="anchored" data-anchor-id="u.s.-department-of-education-college-scorecard-data"><a href="https://collegescorecard.ed.gov/">U.S. Department of Education College Scorecard Data</a></h3>
+<p>Warning: This dataset is not for the feint of heart. You can bulk download it all here, but it’s big (390 MB zipped) and really, really, clunky. There’s multiple tables, and the main table is more than 3000 <em>columns</em> wide. I use this data because it’s highly relevant to college students, but I have to do a lot of pre-processing to make it usable in this format.</p>
+</section>
+<section id="u.s.-census-bureau-small-area-health-insurance-estimates-sahie-program" class="level3">
+<h3 class="anchored" data-anchor-id="u.s.-census-bureau-small-area-health-insurance-estimates-sahie-program"><a href="https://www.census.gov/programs-surveys/sahie/data.html">U.S. Census Bureau Small Area Health Insurance Estimates (SAHIE) Program</a></h3>
+<p>Another Census Bureau program that is not The Census but very important. Data is cleanly organized and well documented. You can get it from an API or using Census data tools. Data going back to 2008.</p>
+</section>
+<section id="u.s.-environmental-protection-agency-greenhouse-gas-reporting-program-data" class="level3">
+<h3 class="anchored" data-anchor-id="u.s.-environmental-protection-agency-greenhouse-gas-reporting-program-data"><a href="https://www.epa.gov/ghgreporting/data-sets">U.S. Environmental Protection Agency Greenhouse Gas Reporting Program Data</a></h3>
+<p>Data from large emitting facilities regulated by the EPA. Data is currently 2023 only.</p>
+</section>
+<section id="national-conference-of-state-legislatures-data-on-state-legislative-partisan-composition" class="level3">
+<h3 class="anchored" data-anchor-id="national-conference-of-state-legislatures-data-on-state-legislative-partisan-composition"><a href="https://www.ncsl.org/about-state-legislatures/state-partisan-composition">National Conference of State Legislatures Data on State Legislative Partisan Composition</a></h3>
+<p>Data comes in PDFs but are not very hard to format. Note: The Great State of Nebraska has a unicameral legislature, members of which are called senators, which is why the tutorials only focus on state senate compositions.</p>
+</section>
+<section id="groundhog-day-predictions-dataset-from-groundhog-day.com" class="level3">
+<h3 class="anchored" data-anchor-id="groundhog-day-predictions-dataset-from-groundhog-day.com"><a href="https://groundhog-day.com/">Groundhog Day Predictions Dataset from Groundhog-Day.com</a></h3>
+<p>The fun one of the bunch. If you follow the Get The Data link <a href="https://groundhog-day.com/predictions">here</a> you can bulk download the predictions going back many years. However, the further back, the thinner the data gets.</p>
 
 
 </section>
