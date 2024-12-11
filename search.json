@@ -53,28 +53,28 @@
     "href": "index.html",
     "title": "The Art of Data Journalism",
     "section": "",
-    "text": "Want to work data into your journalism? This collection of interactive tutorials covers the essential skills and concepts. From basic data analysis to creating compelling visualizations, these lessons will help you:\n\nMaster key tools like R, ggplot2, and Datawrapper\nLearn data cleaning, joining, and aggregation techniques\nCreate professional charts, maps, and other visualizations\nEffectively communicate data-driven stories\n\nWhether you’re a journalism student or working professional looking to expand your skillset, these hands-on tutorials will give you the practical knowledge to find and tell impactful stories with data."
+    "text": "From basic data analysis to creating compelling visualizations, these lessons will help you:\n\nMaster key tools like R, ggplot2, and Datawrapper\nLearn data cleaning, joining, and aggregation techniques\nCreate professional charts, maps, and other visualizations\nEffectively communicate data-driven stories\n\nWhether you’re a journalism student or working professional looking to expand your skillset, these hands-on tutorials will give you the practical knowledge to find and tell impactful stories with data."
   },
   {
     "objectID": "index.html#become-a-news-nerd-interactively",
     "href": "index.html#become-a-news-nerd-interactively",
     "title": "The Art of Data Journalism",
     "section": "",
-    "text": "Want to work data into your journalism? This collection of interactive tutorials covers the essential skills and concepts. From basic data analysis to creating compelling visualizations, these lessons will help you:\n\nMaster key tools like R, ggplot2, and Datawrapper\nLearn data cleaning, joining, and aggregation techniques\nCreate professional charts, maps, and other visualizations\nEffectively communicate data-driven stories\n\nWhether you’re a journalism student or working professional looking to expand your skillset, these hands-on tutorials will give you the practical knowledge to find and tell impactful stories with data."
+    "text": "From basic data analysis to creating compelling visualizations, these lessons will help you:\n\nMaster key tools like R, ggplot2, and Datawrapper\nLearn data cleaning, joining, and aggregation techniques\nCreate professional charts, maps, and other visualizations\nEffectively communicate data-driven stories\n\nWhether you’re a journalism student or working professional looking to expand your skillset, these hands-on tutorials will give you the practical knowledge to find and tell impactful stories with data."
   },
   {
     "objectID": "index.html#what-you-need",
     "href": "index.html#what-you-need",
     "title": "The Art of Data Journalism",
     "section": "What you need",
-    "text": "What you need\nEverything you need is free. Follow the complete installation instructions to get R, R Studio, LearnR and the tutorials installed on your machine.\nFrom there, you’ll need to add a couple of bits about you to take advantage of features of the tutorials. Add what state you live in and what university you go to (or went to) and the tutorials will rewrite themselves to highlight trends where you live and what you care about. Nothing makes learning better than caring about the outcome."
+    "text": "What you need\nEverything you need is free. Follow the complete installation instructions to get R, R Studio, LearnR and the tutorials installed on your machine.\nFrom there, you’ll need to add a couple of bits about you to take advantage of features of the tutorials. Add what state you live in and the tutorials will rewrite themselves to highlight trends where you live using data from your state. Nothing makes learning better than caring about the outcome."
   },
   {
     "objectID": "index.html#about-the-author",
     "href": "index.html#about-the-author",
     "title": "The Art of Data Journalism",
     "section": "About the author",
-    "text": "About the author\nMatt Waite is a professor of practice in the College of Journalism and Mass Communications at the University of Nebraska-Lincoln who teaches courses in AI, data analysis and visualization. He regularly speaks on and consults media organizations about the legal, ethical and journalistic complexities of using drones, data and technology. From 2007-2011, he was a programmer/journalist for the St. Petersburg Times where he developed the website PolitiFact, winner of the 2009 Pulitzer Prize for national reporting. Before that, he was an award-winning investigative reporter and co-author of Paving Paradise: Florida’s Vanishing Wetlands and the Failure of No Net Loss."
+    "text": "About the author\n\n\n\n\n\nMatt Waite is a professor of practice in the College of Journalism and Mass Communications at the University of Nebraska-Lincoln who teaches courses in AI, data analysis and visualization. He regularly speaks on and consults media organizations about the legal, ethical and journalistic complexities of using drones, data and technology. From 2007-2011, he was a programmer/journalist for the St. Petersburg Times where he developed the website PolitiFact, winner of the 2009 Pulitzer Prize for national reporting. Before that, he was an award-winning investigative reporter and co-author of Paving Paradise: Florida’s Vanishing Wetlands and the Failure of No Net Loss."
   },
   {
     "objectID": "index.html#about-the-tutorials",
