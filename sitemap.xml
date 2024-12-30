@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://something.github.io/data.html</loc>
-    <lastmod>2024-12-30T17:48:43.884Z</lastmod>
+    <lastmod>2024-12-30T20:58:11.704Z</lastmod>
+  </url>
+  <url>
+    <loc>https://something.github.io/localization.html</loc>
+    <lastmod>2024-12-06T22:06:38.773Z</lastmod>
   </url>
   <url>
     <loc>https://something.github.io/about.html</loc>
@@ -17,7 +21,11 @@
     <lastmod>2024-12-10T21:44:43.634Z</lastmod>
   </url>
   <url>
-    <loc>https://something.github.io/localization.html</loc>
-    <lastmod>2024-12-06T22:06:38.773Z</lastmod>
+    <loc>https://something.github.io/feedback.html</loc>
+    <lastmod>2024-12-30T20:58:42.602Z</lastmod>
+  </url>
+  <url>
+    <loc>https://something.github.io/curriculum.html</loc>
+    <lastmod>2024-12-30T20:57:36.192Z</lastmod>
   </url>
 </urlset>

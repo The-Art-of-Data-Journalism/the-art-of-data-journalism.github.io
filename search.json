@@ -2,9 +2,30 @@
   {
     "objectID": "data.html",
     "href": "data.html",
-    "title": "Data",
+    "title": "Data Used in the Tutorials",
     "section": "",
     "text": "Here are the data sources used throughout the tutorials, in order of appearance:\n\nCensus Population Estimates by County\nA classic dataset used in data journalism education. From the Census Bureau’s Population Estimates office.\n\n\nUSDA Rural Development Investments Data\nData from the USDA covering grants, loans and other “investments” from the agency. Full data covers 2012 to 2024, though the tutorials use only 5 years. There is a data dictionary if needed.\n\n\nNTSB Airplane Crash Data\nThe National Transportation Safety Board has civilian accident investigations going back to 1962 searchable online. The tutorials only use the last 5 years. Once you enter a search, the results are downloadable.\n\n\nU.S. Department of Education College Scorecard Data\nWarning: This dataset is not for the faint of heart. You can bulk download it all here, but it’s big (390 MB zipped) and really, really, clunky. There’s multiple tables, and the main table is more than 3000 columns wide. I use this data because it’s highly relevant to college students, but I have to do a lot of pre-processing to make it usable in this format.\n\n\nU.S. Census Bureau Small Area Health Insurance Estimates (SAHIE) Program\nAnother Census Bureau program that is not The Census but very important. Data is cleanly organized and well documented. You can get it from an API or using Census data tools. Data going back to 2008.\n\n\nU.S. Environmental Protection Agency Greenhouse Gas Reporting Program Data\nData from large emitting facilities regulated by the EPA. Data is currently 2023 only.\n\n\nNational Conference of State Legislatures Data on State Legislative Partisan Composition\nData comes in PDFs but are not very hard to format. Note: The Great State of Nebraska has a unicameral legislature, members of which are called senators, which is why the tutorials only focus on state senate compositions.\n\n\nGroundhog Day Predictions Dataset from Groundhog-Day.com\nThe fun one of the bunch. If you follow the Get The Data link here you can bulk download the predictions going back many years. However, the further back, the thinner the data gets."
+  },
+  {
+    "objectID": "localization.html",
+    "href": "localization.html",
+    "title": "Installations",
+    "section": "",
+    "text": "Most of the data journalism that goes on day after day is local. People care about where they live. So in order to make these tutorials more meaningful to you, I’ve developed a system where you can localize them to your state. Now you don’t have to do this – they will work if you don’t. But if you don’t, every tutorial is going to be about the great state of Nebraska, my home. If you’re fortunate enough to be from the greatest state in the Union, you can do nothing. If you’re from somewhere else and want your tutorials to about that place, do the following."
+  },
+  {
+    "objectID": "localization.html#step-1-edit-your-r-environment.",
+    "href": "localization.html#step-1-edit-your-r-environment.",
+    "title": "Installations",
+    "section": "Step 1: Edit your R environment.",
+    "text": "Step 1: Edit your R environment.\nOpen R Studio and go to the console. You may or may not have usethis installed, but getting it is easy. Copy this, paste it into the console and hit enter:\ninstall.packages(\"usethis\")\nNow, copy this, paste it into the console and hit enter:\nusethis::edit_r_environ()\nIf you’ve never done this before, a blank document will open up. If you have done this before, you should see your previous entries into your .Renviron. On the first empty line of your document, add this:\ntutorial.state = \"XX\"\nReplace XX with the postal abbreviation of your state. So if you’re from Florida, it’s FL. If you’re from Vermont, it’s VT.\nOnce you’ve done that, save the file and close it.\nThen, quit R Studio. Start it back up. You have to do this for your new R environment to get loaded in."
+  },
+  {
+    "objectID": "localization.html#step-2-check-on-your-work.",
+    "href": "localization.html#step-2-check-on-your-work.",
+    "title": "Installations",
+    "section": "Step 2: Check on your work.",
+    "text": "Step 2: Check on your work.\nIn the first tutorial, the basics, there’s a welcome message at the top greeting you.\nGo to the Tutorial tab, find The Basics, and click Start Tutorial. In the section called The Goal, you should see “Welcome, student from …” and your state’s name. If you don’t see your state, something went wrong. The default state is Nebraska. That means if you don’t set a state, you’re from Nebraska now. Why Nebraska? That’s where I teach, so that’s what I set as the failure condition. Welcome, new Husker. We’re very friendly. You’re going to love it here.\nIf cheering for Dear Old Nebraska U isn’t your jam, go back to the top and try again."
   },
   {
     "objectID": "about.html",
@@ -84,24 +105,45 @@
     "text": "About the tutorials\nThese tutorials have been developed in the classroom, semester over semester, as part of the University of Nebraska-Lincoln’s College of Journalism and Mass Communications’ JOUR 307 Data Journalism course. The current version, with the localization and this site, were created as part of a faculty development leave in Fall 2024."
   },
   {
-    "objectID": "localization.html",
-    "href": "localization.html",
-    "title": "Installations",
+    "objectID": "feedback.html",
+    "href": "feedback.html",
+    "title": "Feedback",
     "section": "",
-    "text": "Most of the data journalism that goes on day after day is local. People care about where they live. So in order to make these tutorials more meaningful to you, I’ve developed a system where you can localize them to your state. Now you don’t have to do this – they will work if you don’t. But if you don’t, every tutorial is going to be about the great state of Nebraska, my home. If you’re fortunate enough to be from the greatest state in the Union, you can do nothing. If you’re from somewhere else and want your tutorials to about that place, do the following."
+    "text": "Got a gripe, kudo or glaring typo you can’t let go of? These tutorials are the work product of Matt Waite, Professor of Practice at the College of Journalism and Mass Communications at the University of Nebraska-Lincoln. All praise, blame or otherwise are his alone. Email him at matt dot waite at unl dot edu."
   },
   {
-    "objectID": "localization.html#step-1-edit-your-r-environment.",
-    "href": "localization.html#step-1-edit-your-r-environment.",
-    "title": "Installations",
-    "section": "Step 1: Edit your R environment.",
-    "text": "Step 1: Edit your R environment.\nOpen R Studio and go to the console. You may or may not have usethis installed, but getting it is easy. Copy this, paste it into the console and hit enter:\ninstall.packages(\"usethis\")\nNow, copy this, paste it into the console and hit enter:\nusethis::edit_r_environ()\nIf you’ve never done this before, a blank document will open up. If you have done this before, you should see your previous entries into your .Renviron. On the first empty line of your document, add this:\ntutorial.state = \"XX\"\nReplace XX with the postal abbreviation of your state. So if you’re from Florida, it’s FL. If you’re from Vermont, it’s VT.\nOnce you’ve done that, save the file and close it.\nThen, quit R Studio. Start it back up. You have to do this for your new R environment to get loaded in."
+    "objectID": "feedback.html#praise-for-the-tutorials",
+    "href": "feedback.html#praise-for-the-tutorials",
+    "title": "Feedback",
+    "section": "Praise for the tutorials",
+    "text": "Praise for the tutorials\n\n“I really enjoyed working through the content, and I liked how much I was guided through. Professor Waite didn’t completely hold our hand through everything, but I felt the material was very accessible and easy to learn with the tutorials we were given.”\n\n\n“The R studio tutorials were great because I was able to use them over and over between tutorials and the semester long project. It made coding easier to understand and do even though at times it would kick my ass, but I loved the challenge and once I got the hang of it my life got a lot easier.”\n\n\n“The tutorials are perfect. I really feel like they are built to be helping tool for students and are effective way how to teach something. And a bonus is that I can come back to them any day and review how things are done.”\n\n\n“The tutorials are really easy to follow and help me understand the goal of the assignments and how to complete them. They were also beneficial to have during the completion of the projects because it allowed me to look back at previous work and use it as a reference.”"
   },
   {
-    "objectID": "localization.html#step-2-check-on-your-work.",
-    "href": "localization.html#step-2-check-on-your-work.",
-    "title": "Installations",
-    "section": "Step 2: Check on your work.",
-    "text": "Step 2: Check on your work.\nIn the first tutorial, the basics, there’s a welcome message at the top greeting you.\nGo to the Tutorial tab, find The Basics, and click Start Tutorial. In the section called The Goal, you should see “Welcome, student from …” and your state’s name. If you don’t see your state, something went wrong. The default state is Nebraska. That means if you don’t set a state, you’re from Nebraska now. Why Nebraska? That’s where I teach, so that’s what I set as the failure condition. Welcome, new Husker. We’re very friendly. You’re going to love it here.\nIf cheering for Dear Old Nebraska U isn’t your jam, go back to the top and try again."
+    "objectID": "curriculum.html",
+    "href": "curriculum.html",
+    "title": "Course Curriculum",
+    "section": "",
+    "text": "The Art of Data Journalism is designed to be a course in three parts."
+  },
+  {
+    "objectID": "curriculum.html#what-you-need-to-start",
+    "href": "curriculum.html#what-you-need-to-start",
+    "title": "Course Curriculum",
+    "section": "What You Need to Start",
+    "text": "What You Need to Start\n\nTechnical Requirements\n\nA computer (Windows, Mac, or Linux)\nR and RStudio installed (free)\nInternet connection\nBasic computer literacy\n\n\n\nBackground Knowledge\n\nNo programming experience required\nNo statistics background needed\nBasic math skills helpful\nCuriosity about data essential"
+  },
+  {
+    "objectID": "curriculum.html#tutorial-structure",
+    "href": "curriculum.html#tutorial-structure",
+    "title": "Course Curriculum",
+    "section": "Tutorial structure",
+    "text": "Tutorial structure\n\nFoundations (Lessons 1-6)\n\nBasic R programming concepts\nWorking with data frames\nIntroduction to the tidyverse\nUnderstanding data types\nAggregating and summarizing data\nFiltering and selecting data\nBasic statistical concepts\n\n\n\nData Realities (Lessons 7-13)\n\nWorking with dates\nData cleaning basics\nWorking with text patterns\nReformatting data\nAlgorithmic cleaning tools\nJoining datasets\nWorking with spreadsheets\nWorking with APIs\n\n\n\nVisualization (Lessons 14-28)\n\nCreating basic charts with ggplot2\nAdvanced visualization techniques\nMaking tables for publication\nAdding annotations and context\nColor theory and accessibility\nWorking with Datawrapper\n\nEach lesson includes: - Guided exercises - Real-world examples - Practice problems - Code solutions"
+  },
+  {
+    "objectID": "curriculum.html#going-further",
+    "href": "curriculum.html#going-further",
+    "title": "Course Curriculum",
+    "section": "Going further",
+    "text": "Going further\nThe Art of Data Journalism Tutorials are meant to be the backbone of a class, but there’s much more room in a data journalism course for learning.\n\nRequire students to request data from public agencies under your state’s public records laws.\nHave students work in teams to come up with stories out of a dataset just released, such as annual school standardized test scores or Census updates.\nRequire students to write a story pitch memo based on a news event in your state combined with a relevant dataset about that event. Students have to acquire the data, analyze it and document a story that would go deeper on that issue using what they found.\nIt’s difficult if your classes are larger, but have students do their own data journalism story. Go through the entire process of reporting, acquiring data, analyzing it, reviewing your work and publishing."
   }
 ]
