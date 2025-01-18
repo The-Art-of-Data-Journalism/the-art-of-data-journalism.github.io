@@ -53,14 +53,14 @@
     "href": "installations.html#part-2-install-r-and-r-studio",
     "title": "Installations",
     "section": "Part 2: Install R and R Studio",
-    "text": "Part 2: Install R and R Studio\n\nGo here. Go to Step 1 and click Download and Install R\n\nIf you’re on a Mac, click on Download R for MacOS. If you have a newer Mac with an M series chip, you want the arm64 version. If you’re on an older Mac with an Intel chip, you want the X86_64 version.\nIf you’re on Windows, install the base package AND install Rtools. When either downloads, run the executable and accept the defaults and license agreement.\n\nGo back to here. Go to Step 2 and click R Studio Desktop for your version.\n\nMac users:\n That will put R Studio into your Applications folder where you can find it and launch it.\nWindows users:\nYou can find it by typing RStudio into the Cortana search.\nNOTE: This process will add two icons to your computer. One is the R language app. One is R Studio. You will only use R Studio. Or, memefied …"
+    "text": "Part 2: Install R and R Studio\n\nGo here. Go to Step 1 and click Download and Install R\n\nIf you’re on a Mac, click on Download R for MacOS. If you have a newer Mac with an M series chip, you want the arm64 version. If you’re on an older Mac with an Intel chip, you want the X86_64 version.\nIf you’re on Windows, install the base package AND install Rtools. When either downloads, run the executable and accept the defaults and license agreement.\n\nGo back to here. Go to Step 2 and click R Studio Desktop for your version.\n\nMac users:\n That will put R Studio into your Applications folder where you can find it and launch it.\nAfter you have done that, use the spotlight search (the magnifying glass at the top right of your screen), type terminal and hit enter. Then, in the terminal window, type: xcode-select --install\nWindows users:\nYou can find it by typing RStudio into the Cortana search.\nNOTE FOR ALL USERS:\nThis process will add two icons to your computer. One is the R language app. One is R Studio. You will only use R Studio. Or, memefied …"
   },
   {
     "objectID": "installations.html#part-3-installing-r-libraries",
     "href": "installations.html#part-3-installing-r-libraries",
     "title": "Installations",
     "section": "Part 3: Installing R libraries",
-    "text": "Part 3: Installing R libraries\n\nOpen R Studio. It should show the Console view by default. We’ll talk a lot more about the console later.\nCopy and paste this into the console and hit enter:\n\ninstall.packages(c(\"tidyverse\", \"learnr\", \"gradethis\", \"janitor\", \"lubridate\", \"remotes\", \"devtools\", \"waffle\", \"ggrepel\", \"ggbeeswarm\", \"ggbump\", \"ggalt\", \"ggtext\", \"refinr\", \"gt\"))"
+    "text": "Part 3: Installing R libraries\n\nOpen R Studio. It should show the Console view by default. We’ll talk a lot more about the console later.\nCopy and paste this into the console and hit enter:\n\ninstall.packages(c(\"tidyverse\", \"learnr\", \"gradethis\", \"janitor\", \"lubridate\", \"remotes\", \"devtools\", \"waffle\", \"ggrepel\", \"ggbeeswarm\", \"ggbump\", \"ggalt\", \"ggtext\", \"refinr\", \"gt\", \"tidycensus\"))"
   },
   {
     "objectID": "installations.html#part-4-install-the-tutorials",
