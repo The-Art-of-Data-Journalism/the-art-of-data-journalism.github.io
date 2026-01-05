@@ -60,7 +60,7 @@
     "href": "installations.html#part-3-installing-r-libraries",
     "title": "Installations",
     "section": "Part 3: Installing R libraries",
-    "text": "Part 3: Installing R libraries\n\nOpen R Studio. It should show the Console view by default. We’ll talk a lot more about the console later.\nCopy and paste this into the console and hit enter:\n\ninstall.packages(c(\"tidyverse\", \"learnr\", \"gradethis\", \"janitor\", \"lubridate\", \"remotes\", \"devtools\", \"waffle\", \"ggrepel\", \"ggbeeswarm\", \"ggbump\", \"ggalt\", \"ggtext\", \"refinr\", \"gt\", \"tidycensus\"))"
+    "text": "Part 3: Installing R libraries\n\nOpen R Studio. It should show the Console view by default. We’ll talk a lot more about the console later.\nCopy and paste this into the console and hit enter:\n\ninstall.packages(c(\"tidyverse\", \"learnr\", \"gradethis\", \"janitor\", \"lubridate\", \"remotes\", \"devtools\", \"ggrepel\", \"ggbeeswarm\", \"ggbump\", \"ggtext\", \"refinr\", \"gt\", \"tidycensus\"))"
   },
   {
     "objectID": "installations.html#part-4-install-the-tutorials",
