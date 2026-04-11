@@ -1,647 +1,406 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Installations – The Art of Data Journalism</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
-
-
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./logo.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-223159d87f264157815dd8ff383a15be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-223159d87f264157815dd8ff383a15be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-223159d87f264157815dd8ff383a15be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
-
-
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Installations – The Art of Data Journalism">
-<meta property="og:description" content="">
-<meta property="og:image" content="https://something.github.io/images/Screen Shot 2020-07-30 at 6.07.20 PM.png">
-<meta property="og:site_name" content="The Art of Data Journalism">
-<meta property="og:image:alt" content="Make sure you drag the R Studio icon into the Applications folder icon.">
-<meta property="og:image:height" content="354">
-<meta property="og:image:width" content="770">
-<meta name="twitter:title" content="Installations – The Art of Data Journalism">
-<meta name="twitter:description" content="">
-<meta name="twitter:image" content="http://imageurltocome.png">
-<meta name="twitter:creator" content="@mattwaite">
-<meta name="twitter:card" content="summary_large_image">
-</head>
-
-<body class="nav-fixed quarto-light">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./logo.png" alt="" class="navbar-logo light-content">
-    <img src="./logo.png" alt="" class="navbar-logo dark-content">
-    </a>
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">The Art of Data Journalism</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./installations.html" aria-current="page"> 
-<span class="menu-text">Installation</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./localization.html"> 
-<span class="menu-text">Localization</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./curriculum.html"> 
-<span class="menu-text">Curriculum</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./data.html"> 
-<span class="menu-text">Data</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./feedback.html"> 
-<span class="menu-text">Feedback</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#part-1-update-your-operating-system" id="toc-part-1-update-your-operating-system" class="nav-link active" data-scroll-target="#part-1-update-your-operating-system">Part 1: Update your operating system</a></li>
-  <li><a href="#part-2-install-r-and-r-studio" id="toc-part-2-install-r-and-r-studio" class="nav-link" data-scroll-target="#part-2-install-r-and-r-studio">Part 2: Install R and R Studio</a></li>
-  <li><a href="#part-3-installing-r-libraries" id="toc-part-3-installing-r-libraries" class="nav-link" data-scroll-target="#part-3-installing-r-libraries">Part 3: Installing R libraries</a></li>
-  <li><a href="#part-4-install-the-tutorials" id="toc-part-4-install-the-tutorials" class="nav-link" data-scroll-target="#part-4-install-the-tutorials">Part 4: Install the tutorials</a></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Installations</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>The Art of Data Journalism is an interactive, locally-aware textbook that runs entirely in R Studio, a free development environment for the statistical programming language R. Right now, that might not mean much to you, but it will.</p>
-<p>The good news is all of this is free. It will work on Mac or Windows alike. And it doesn’t require an ultramodern machine. But getting it all set up takes a bit of work.</p>
-<section id="part-1-update-your-operating-system" class="level2">
-<h2 class="anchored" data-anchor-id="part-1-update-your-operating-system">Part 1: Update your operating system</h2>
-<p>While not required to make this work, it’s good practice. My experience with undergraduate students is that they don’t update their machines. Some ever. You should do this, often.</p>
-<p>On a Mac, it’s in your System Settings under the General tab. You’ll find Software Update there.</p>
-<p>On Windows, use the Cortana search bar and search for windows update.</p>
-<p>If you haven’t done this in a while, it could take a bit of time. It’s worth it. Things will run smoother.</p>
-</section>
-<section id="part-2-install-r-and-r-studio" class="level2">
-<h2 class="anchored" data-anchor-id="part-2-install-r-and-r-studio">Part 2: Install R and R Studio</h2>
-<ol type="1">
-<li><p>Go <a href="https://posit.co/download/rstudio-desktop/">here</a>. Go to Step 1 and click Download and Install R</p>
-<ul>
-<li><p>If you’re on a Mac, click on Download R for MacOS. If you have a newer Mac with an M series chip, you want the arm64 version. If you’re on an older Mac with an Intel chip, you want the X86_64 version.</p></li>
-<li><p>If you’re on Windows, install the base package <em>AND</em> install Rtools. When either downloads, run the executable and accept the defaults and license agreement.</p></li>
-</ul></li>
-<li><p>Go back to <a href="https://posit.co/download/rstudio-desktop/">here</a>. Go to Step 2 and click R Studio Desktop for your version.</p></li>
-</ol>
-<p><strong>Mac users:</strong></p>
-<p><img src="images/Screen Shot 2020-07-30 at 6.07.20 PM.png" class="img-fluid" alt="Make sure you drag the R Studio icon into the Applications folder icon."> That will put R Studio into your Applications folder where you can find it and launch it.</p>
-<p>After you have done that, use the spotlight search (the magnifying glass at the top right of your screen), type terminal and hit enter. Then, in the terminal window, type: <code>xcode-select --install</code></p>
-<p><strong>Windows users:</strong></p>
-<p>You can find it by typing RStudio into the Cortana search.</p>
-<p><strong>NOTE FOR ALL USERS:</strong></p>
-<p>This process will add <em>two</em> icons to your computer. One is the R language app. One is R Studio. You will <em>only</em> use R Studio. Or, memefied …</p>
-<p><img src="images/iconmeme.jpg" class="img-fluid"></p>
-</section>
-<section id="part-3-installing-r-libraries" class="level2">
-<h2 class="anchored" data-anchor-id="part-3-installing-r-libraries">Part 3: Installing R libraries</h2>
-<ol type="1">
-<li>Open R Studio. It should show the Console view by default. We’ll talk a lot more about the console later.</li>
-<li>Copy and paste this into the console and hit enter:</li>
-</ol>
-<p><code>install.packages(c("tidyverse", "learnr", "gradethis", "janitor", "lubridate", "remotes", "devtools", "ggrepel", "ggbeeswarm", "ggbump", "ggtext", "refinr", "gt", "tidycensus"))</code></p>
-</section>
-<section id="part-4-install-the-tutorials" class="level2">
-<h2 class="anchored" data-anchor-id="part-4-install-the-tutorials">Part 4: Install the tutorials</h2>
-<p>To get the tutorials, do the following.</p>
-<ol type="1">
-<li>Open R Studio.</li>
-</ol>
-<p><img src="images/tutorials1.png" class="img-fluid"></p>
-<ol start="2" type="1">
-<li>R Studio defaults to the console view. This is good, This is where you want to be.</li>
-</ol>
-<p><img src="images/tutorials2.png" class="img-fluid"></p>
-<ol start="3" type="1">
-<li><p>In the console, enter the following:</p>
-<p><code>devtools::install_github("The-Art-of-Data-Journalism/DataJournalismTutorials", force=TRUE)</code></p></li>
-<li><p>You should see some automated output. If you are told there are newer libraries and asked if you want to install them, just hit enter (which means do nothing). When it is done, quit R Studio and restart it. This is what it will look like when done.</p></li>
-</ol>
-<p><img src="images/tutorials3.png" class="img-fluid"></p>
-<p>Remember: You only need to do these installation steps once. After everything is installed, you can just open RStudio and access the tutorials from the Tutorial tab.</p>
-
-
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
-    const isCodeAnnotation = (el) => {
-      for (const clz of el.classList) {
-        if (clz.startsWith('code-annotation-')) {                     
-          return true;
-        }
-      }
-      return false;
-    }
-    const onCopySuccess = function(e) {
-      // button target
-      const button = e.trigger;
-      // don't keep focus
-      button.blur();
-      // flash "checked"
-      button.classList.add('code-copy-button-checked');
-      var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
-      let tooltip;
-      if (window.bootstrap) {
-        button.setAttribute("data-bs-toggle", "tooltip");
-        button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
-        tooltip = new bootstrap.Tooltip(button, 
-          { trigger: "manual", 
-            customClass: "code-copy-button-tooltip",
-            offset: [0, -8]});
-        tooltip.show();    
-      }
-      setTimeout(function() {
-        if (tooltip) {
-          tooltip.hide();
-          button.removeAttribute("data-bs-title");
-          button.removeAttribute("data-bs-toggle");
-          button.removeAttribute("data-bs-placement");
-        }
-        button.setAttribute("title", currentTitle);
-        button.classList.remove('code-copy-button-checked');
-      }, 1000);
-      // clear code selection
-      e.clearSelection();
-    }
-    const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-      text: getTextToCopy
-    });
-    clipboard.on('success', onCopySuccess);
-    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-        text: getTextToCopy,
-        container: window.document.getElementById('quarto-embedded-source-code-modal')
-      });
-      clipboardModal.on('success', onCopySuccess);
-    }
-      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/something\.github\.io");
-      var isInternal = (href) => {
-          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-      }
-      // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-      for (var i=0; i<links.length; i++) {
-        const link = links[i];
-        if (!isInternal(link.href)) {
-          // undo the damage that might have been done by quarto-nav.js in the case of
-          // links that we want to consider external
-          if (link.dataset.originalHref !== undefined) {
-            link.href = link.dataset.originalHref;
-          }
-        }
-      }
-    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-      const config = {
-        allowHTML: true,
-        maxWidth: 500,
-        delay: 100,
-        arrow: false,
-        appendTo: function(el) {
-            return el.parentElement;
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Setup &amp; Installation | The Art of Data Journalism</title>
+<meta property="og:title" content="Setup &amp; Installation | The Art of Data Journalism"/>
+<meta property="og:description" content="Step-by-step instructions for installing R, RStudio, and the Data Journalism Tutorials package."/>
+<meta property="og:url" content="https://the-art-of-data-journalism.github.io/installations.html"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@300;400;500;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "on-primary-container": "#8b99ac",
+          "surface-container-highest": "#e1e3e4",
+          "on-background": "#191c1d",
+          "primary-container": "#233141",
+          "inverse-on-surface": "#f0f1f2",
+          "tertiary-fixed-dim": "#ffb68f",
+          "surface-container": "#edeeef",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#f8f9fa",
+          "on-surface": "#191c1d",
+          "on-tertiary-fixed": "#331200",
+          "on-surface-variant": "#454652",
+          "tertiary-fixed": "#ffdbca",
+          "primary-fixed-dim": "#bac8dc",
+          "surface-container-low": "#f3f4f5",
+          "on-secondary-fixed": "#001947",
+          "on-primary-fixed": "#0f1c2c",
+          "secondary-container": "#256df0",
+          "primary": "#0e1c2b",
+          "error": "#ba1a1a",
+          "inverse-surface": "#2e3132",
+          "secondary-fixed-dim": "#b1c5ff",
+          "tertiary-container": "#532100",
+          "secondary": "#0054cb",
+          "on-tertiary-container": "#f57009",
+          "surface-container-high": "#e7e8e9",
+          "on-secondary": "#ffffff",
+          "on-error": "#ffffff",
+          "background": "#f8f9fa",
+          "surface-tint": "#525f71",
+          "inverse-primary": "#bac8dc",
+          "on-secondary-fixed-variant": "#00419f",
+          "surface-dim": "#d9dadb",
+          "on-primary-fixed-variant": "#3a4859",
+          "error-container": "#ffdad6",
+          "tertiary": "#321100",
+          "on-tertiary": "#ffffff",
+          "on-primary": "#ffffff",
+          "outline-variant": "#c6c5d4",
+          "on-secondary-container": "#fefcff",
+          "secondary-fixed": "#dae2ff",
+          "on-tertiary-fixed-variant": "#773200",
+          "on-error-container": "#93000a",
+          "surface-bright": "#f8f9fa",
+          "surface-variant": "#e1e3e4",
+          "primary-fixed": "#d6e4f9",
+          "outline": "#767683"
         },
-        interactive: true,
-        interactiveBorder: 10,
-        theme: 'quarto',
-        placement: 'bottom-start',
-      };
-      if (contentFn) {
-        config.content = contentFn;
-      }
-      if (onTriggerFn) {
-        config.onTrigger = onTriggerFn;
-      }
-      if (onUntriggerFn) {
-        config.onUntrigger = onUntriggerFn;
-      }
-      window.tippy(el, config); 
-    }
-    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-    for (var i=0; i<noterefs.length; i++) {
-      const ref = noterefs[i];
-      tippyHover(ref, function() {
-        // use id or data attribute instead here
-        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-        try { href = new URL(href).hash; } catch {}
-        const id = href.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note) {
-          return note.innerHTML;
-        } else {
-          return "";
-        }
-      });
-    }
-    const xrefs = window.document.querySelectorAll('a.quarto-xref');
-    const processXRef = (id, note) => {
-      // Strip column container classes
-      const stripColumnClz = (el) => {
-        el.classList.remove("page-full", "page-columns");
-        if (el.children) {
-          for (const child of el.children) {
-            stripColumnClz(child);
-          }
-        }
-      }
-      stripColumnClz(note)
-      if (id === null || id.startsWith('sec-')) {
-        // Special case sections, only their first couple elements
-        const container = document.createElement("div");
-        if (note.children && note.children.length > 2) {
-          container.appendChild(note.children[0].cloneNode(true));
-          for (let i = 1; i < note.children.length; i++) {
-            const child = note.children[i];
-            if (child.tagName === "P" && child.innerText === "") {
-              continue;
-            } else {
-              container.appendChild(child.cloneNode(true));
-              break;
-            }
-          }
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(container);
-          }
-          return container.innerHTML
-        } else {
-          if (window.Quarto?.typesetMath) {
-            window.Quarto.typesetMath(note);
-          }
-          return note.innerHTML;
-        }
-      } else {
-        // Remove any anchor links if they are present
-        const anchorLink = note.querySelector('a.anchorjs-link');
-        if (anchorLink) {
-          anchorLink.remove();
-        }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
-        }
-        if (note.classList.contains("callout")) {
-          return note.outerHTML;
-        } else {
-          return note.innerHTML;
+        borderRadius: {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        fontFamily: {
+          "headline": ["Space Grotesk"],
+          "body": ["Newsreader"],
+          "label": ["Inter"]
         }
       }
     }
-    for (var i=0; i<xrefs.length; i++) {
-      const xref = xrefs[i];
-      tippyHover(xref, undefined, function(instance) {
-        instance.disable();
-        let url = xref.getAttribute('href');
-        let hash = undefined; 
-        if (url.startsWith('#')) {
-          hash = url;
-        } else {
-          try { hash = new URL(url).hash; } catch {}
-        }
-        if (hash) {
-          const id = hash.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note !== null) {
-            try {
-              const html = processXRef(id, note.cloneNode(true));
-              instance.setContent(html);
-            } finally {
-              instance.enable();
-              instance.show();
-            }
-          } else {
-            // See if we can fetch this
-            fetch(url.split('#')[0])
-            .then(res => res.text())
-            .then(html => {
-              const parser = new DOMParser();
-              const htmlDoc = parser.parseFromString(html, "text/html");
-              const note = htmlDoc.getElementById(id);
-              if (note !== null) {
-                const html = processXRef(id, note);
-                instance.setContent(html);
-              } 
-            }).finally(() => {
-              instance.enable();
-              instance.show();
-            });
-          }
-        } else {
-          // See if we can fetch a full url (with no hash to target)
-          // This is a special case and we should probably do some content thinning / targeting
-          fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.querySelector('main.content');
-            if (note !== null) {
-              // This should only happen for chapter cross references
-              // (since there is no id in the URL)
-              // remove the first header
-              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-                note.children[0].remove();
-              }
-              const html = processXRef(null, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
-          });
-        }
-      }, function(instance) {
-      });
-    }
-        let selectedAnnoteEl;
-        const selectorForAnnotation = ( cell, annotation) => {
-          let cellAttr = 'data-code-cell="' + cell + '"';
-          let lineAttr = 'data-code-annotation="' +  annotation + '"';
-          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-          return selector;
-        }
-        const selectCodeLines = (annoteEl) => {
-          const doc = window.document;
-          const targetCell = annoteEl.getAttribute("data-target-cell");
-          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-          const lineIds = lines.map((line) => {
-            return targetCell + "-" + line;
-          })
-          let top = null;
-          let height = null;
-          let parent = null;
-          if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
-            }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
-            }
-            selectedAnnoteEl = annoteEl;
-          }
-        };
-        const unselectCodeLines = () => {
-          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-          elementsIds.forEach((elId) => {
-            const div = window.document.getElementById(elId);
-            if (div) {
-              div.remove();
-            }
-          });
-          selectedAnnoteEl = undefined;
-        };
-          // Handle positioning of the toggle
-      window.addEventListener(
-        "resize",
-        throttle(() => {
-          elRect = undefined;
-          if (selectedAnnoteEl) {
-            selectCodeLines(selectedAnnoteEl);
-          }
-        }, 10)
-      );
-      function throttle(fn, ms) {
-      let throttle = false;
-      let timer;
-        return (...args) => {
-          if(!throttle) { // first call gets through
-              fn.apply(this, args);
-              throttle = true;
-          } else { // all the others get throttled
-              if(timer) clearTimeout(timer); // cancel #2
-              timer = setTimeout(() => {
-                fn.apply(this, args);
-                timer = throttle = false;
-              }, ms);
-          }
-        };
-      }
-        // Attach click handler to the DT
-        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-        for (const annoteDlNode of annoteDls) {
-          annoteDlNode.addEventListener('click', (event) => {
-            const clickedEl = event.target;
-            if (clickedEl !== selectedAnnoteEl) {
-              unselectCodeLines();
-              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-              if (activeEl) {
-                activeEl.classList.remove('code-annotation-active');
-              }
-              selectCodeLines(clickedEl);
-              clickedEl.classList.add('code-annotation-active');
-            } else {
-              // Unselect the line
-              unselectCodeLines();
-              clickedEl.classList.remove('code-annotation-active');
-            }
-          });
-        }
-    const findCites = (el) => {
-      const parentEl = el.parentElement;
-      if (parentEl) {
-        const cites = parentEl.dataset.cites;
-        if (cites) {
-          return {
-            el,
-            cites: cites.split(' ')
-          };
-        } else {
-          return findCites(el.parentElement)
-        }
-      } else {
-        return undefined;
-      }
-    };
-    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-    for (var i=0; i<bibliorefs.length; i++) {
-      const ref = bibliorefs[i];
-      const citeInfo = findCites(ref);
-      if (citeInfo) {
-        tippyHover(citeInfo.el, function() {
-          var popup = window.document.createElement('div');
-          citeInfo.cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
-          });
-          return popup.innerHTML;
-        });
-      }
-    }
-  });
-  </script>
-</div> <!-- /content -->
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .code-shadow {
+    box-shadow: 0 20px 40px rgba(15, 28, 44, 0.08);
+  }
+  .gradient-cta {
+    background: linear-gradient(135deg, #0054cb 0%, #256df0 100%);
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-label selection:bg-secondary-fixed selection:text-on-secondary-fixed">
 
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+    <a href="index.html" class="text-2xl font-bold tracking-tighter text-slate-900 font-headline hover:opacity-80 transition-opacity">
+      The Art of Data Journalism
+    </a>
+    <div class="hidden md:flex gap-8 items-center font-headline font-bold tracking-tight">
+      <a class="text-slate-600 hover:text-slate-900 transition-colors" href="index.html">Home</a>
+      <a class="text-slate-600 hover:text-slate-900 transition-colors" href="curriculum.html">Curriculum</a>
+      <a class="text-secondary border-b-2 border-secondary pb-1" href="installations.html">Installation</a>
+      <a class="text-slate-600 hover:text-slate-900 transition-colors" href="data.html">Data</a>
+      <a class="text-slate-600 hover:text-slate-900 transition-colors" href="feedback.html">Feedback</a>
+    </div>
+    <a href="installations.html" class="px-6 py-2 gradient-cta text-on-secondary rounded-md font-headline font-bold hover:opacity-90 transition-all active:scale-95">
+      Get Started
+    </a>
+  </div>
+</nav>
 
+<div class="max-w-7xl mx-auto flex gap-8 pt-24 px-8">
 
+  <!-- Sticky Left Sidebar -->
+  <aside class="h-screen sticky top-20 w-64 hidden lg:block bg-slate-50">
+    <div class="flex flex-col gap-2 p-6">
+      <div class="mb-6">
+        <h2 class="text-lg font-headline font-bold">Setup Guide</h2>
+        <p class="font-body italic text-sm text-on-surface-variant">Technical Prerequisites</p>
+      </div>
+      <a class="flex items-center gap-3 p-3 rounded-lg text-slate-500 hover:bg-slate-100 transition-all duration-300" href="#os-updates">
+        <span class="material-symbols-outlined">settings</span>
+        <span class="font-body italic text-lg">Environment Setup</span>
+      </a>
+      <a class="flex items-center gap-3 p-3 rounded-lg bg-blue-50 text-blue-700 font-bold border-r-4 border-blue-600 transition-all duration-300" href="#r-install">
+        <span class="material-symbols-outlined">terminal</span>
+        <span class="font-body italic text-lg">Installing R</span>
+      </a>
+      <a class="flex items-center gap-3 p-3 rounded-lg text-slate-500 hover:bg-slate-100 transition-all duration-300" href="#r-libraries">
+        <span class="material-symbols-outlined">package_2</span>
+        <span class="font-body italic text-lg">R Libraries</span>
+      </a>
+      <a class="flex items-center gap-3 p-3 rounded-lg text-slate-500 hover:bg-slate-100 transition-all duration-300" href="#tutorials-install">
+        <span class="material-symbols-outlined">desktop_windows</span>
+        <span class="font-body italic text-lg">The Tutorials</span>
+      </a>
+      <a class="flex items-center gap-3 p-3 rounded-lg text-slate-500 hover:bg-slate-100 transition-all duration-300" href="#localization">
+        <span class="material-symbols-outlined">language</span>
+        <span class="font-body italic text-lg">Localization</span>
+      </a>
+    </div>
+  </aside>
 
-</body></html>
+  <!-- Main Content -->
+  <main class="flex-1 max-w-4xl pb-24">
+
+    <!-- Header -->
+    <header class="mb-16 border-b border-outline-variant/10 pb-12">
+      <h1 class="font-headline text-6xl font-bold tracking-tighter text-primary mb-6 leading-none">
+        Setting Up Your <span class="text-secondary">Newsroom</span>
+      </h1>
+      <p class="font-body text-2xl text-on-surface-variant max-w-2xl leading-relaxed">
+        Before we dive into data analysis and storytelling, we need to set up your toolkit. Follow these steps to get R, RStudio, and the tutorials installed on your computer.
+      </p>
+    </header>
+
+    <!-- Step 1: OS Updates -->
+    <section class="mb-20 scroll-mt-24" id="os-updates">
+      <div class="flex items-baseline gap-4 mb-8">
+        <span class="font-headline text-5xl font-extralight text-outline-variant">01</span>
+        <h2 class="font-headline text-3xl font-bold text-primary uppercase tracking-tight">Operating System Updates</h2>
+      </div>
+      <div class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden">
+        <p class="font-body text-xl mb-6 leading-relaxed">
+          Data science libraries evolve rapidly. Ensuring your machine is up-to-date prevents the majority of installation headaches down the road.
+        </p>
+        <ul class="space-y-4 font-label text-sm text-on-surface">
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+            <span><strong>macOS:</strong> Open System Settings &gt; General &gt; Software Update. Make sure you are on a recent version.</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+            <span><strong>Windows:</strong> Check Windows Update and install all "Quality" and "Critical" updates.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Step 2: Installing R & RStudio -->
+    <section class="mb-20 scroll-mt-24" id="r-install">
+      <div class="flex items-baseline gap-4 mb-8">
+        <span class="font-headline text-5xl font-extralight text-outline-variant">02</span>
+        <h2 class="font-headline text-3xl font-bold text-primary uppercase tracking-tight">Installing R and RStudio</h2>
+      </div>
+      <!-- Drake meme + download links -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 items-start">
+        <div class="bg-primary text-white p-8 rounded-xl">
+          <h3 class="font-headline text-xl mb-4 text-secondary-fixed">The Approach</h3>
+          <p class="font-body text-lg mb-6 italic">
+            Think of R as the engine and RStudio as the dashboard. You need both, but you'll only ever interact with the dashboard.
+          </p>
+          <div class="space-y-4">
+            <a class="block bg-surface-container-lowest/10 p-4 rounded-lg border border-white/10 hover:bg-white/10 transition-colors" href="https://cran.r-project.org" target="_blank" rel="noopener">
+              <span class="block text-xs uppercase tracking-widest text-on-primary-container mb-1">Download from CRAN</span>
+              <span class="font-headline font-bold">R Language</span>
+            </a>
+            <a class="block bg-secondary p-4 rounded-lg hover:opacity-90 transition-all" href="https://posit.co/download/rstudio-desktop/" target="_blank" rel="noopener">
+              <span class="block text-xs uppercase tracking-widest text-on-secondary/70 mb-1">Download from Posit</span>
+              <span class="font-headline font-bold text-on-secondary">RStudio Desktop</span>
+            </a>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden ambient-shadow">
+          <img alt="Drake meme: don't open the R app directly, do open RStudio" class="w-full" src="images/iconmeme.jpg"/>
+        </div>
+      </div>
+      <!-- Platform notes -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-surface-container p-6 rounded-lg">
+          <h4 class="font-headline font-bold text-primary mb-2">Install Order Matters</h4>
+          <p class="text-sm font-label text-on-surface-variant">Install R first, then RStudio. RStudio will automatically detect your R installation.</p>
+        </div>
+        <div class="bg-surface-container p-6 rounded-lg">
+          <h4 class="font-headline font-bold text-primary mb-2">Mac Users: Apple Silicon vs. Intel</h4>
+          <p class="text-sm font-label text-on-surface-variant">CRAN has separate R installers for Apple Silicon (M1/M2/M3) and Intel Macs. Check your chip under Apple menu &gt; About This Mac and pick the right one.</p>
+        </div>
+        <div class="bg-surface-container p-6 rounded-lg">
+          <h4 class="font-headline font-bold text-primary mb-2">Windows Users</h4>
+          <p class="text-sm font-label text-on-surface-variant">Install RTools to compile packages from source. Download it from <a href="https://cran.r-project.org/bin/windows/Rtools/" class="text-secondary underline" target="_blank" rel="noopener">CRAN's Rtools page</a>.</p>
+        </div>
+        <div class="bg-surface-container p-6 rounded-lg">
+          <h4 class="font-headline font-bold text-primary mb-2">Mac Users: Drag to Applications</h4>
+          <p class="text-sm font-label text-on-surface-variant mb-3">When the RStudio installer opens, drag the RStudio icon into the Applications folder — don't run it straight from the disk image.</p>
+          <img alt="Drag RStudio into the Applications folder" class="w-full rounded-lg" src="images/Screen Shot 2020-07-30 at 6.07.20 PM.png"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Step 3: R Libraries -->
+    <section class="mb-20 scroll-mt-24" id="r-libraries">
+      <div class="flex items-baseline gap-4 mb-8">
+        <span class="font-headline text-5xl font-extralight text-outline-variant">03</span>
+        <h2 class="font-headline text-3xl font-bold text-primary uppercase tracking-tight">Installing R Libraries</h2>
+      </div>
+      <p class="font-body text-xl mb-8 leading-relaxed">
+        Packages are the "apps" for R. Run this single command in your RStudio console to install everything the tutorials need — the Tidyverse, visualization helpers, data cleaning tools, and more:
+      </p>
+      <div class="bg-primary rounded-xl overflow-hidden code-shadow">
+        <div class="bg-white/5 px-4 py-2 border-b border-white/5 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <div class="w-2.5 h-2.5 rounded-full bg-error"></div>
+            <div class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></div>
+            <div class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></div>
+          </div>
+          <span class="text-[10px] font-label text-on-primary-container tracking-widest uppercase">R Console</span>
+        </div>
+        <div class="p-8 font-mono text-sm leading-relaxed text-blue-300">
+          <div class="flex gap-4">
+            <span class="text-slate-600 select-none">1</span>
+            <span>install.packages(c(</span>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-slate-600 select-none">2</span>
+            <span>&nbsp;&nbsp;<span class="text-green-400">"tidyverse"</span>, <span class="text-green-400">"learnr"</span>, <span class="text-green-400">"gradethis"</span>, <span class="text-green-400">"janitor"</span>,</span>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-slate-600 select-none">3</span>
+            <span>&nbsp;&nbsp;<span class="text-green-400">"lubridate"</span>, <span class="text-green-400">"remotes"</span>, <span class="text-green-400">"devtools"</span>, <span class="text-green-400">"ggrepel"</span>,</span>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-slate-600 select-none">4</span>
+            <span>&nbsp;&nbsp;<span class="text-green-400">"ggbeeswarm"</span>, <span class="text-green-400">"ggtext"</span>, <span class="text-green-400">"refinr"</span>, <span class="text-green-400">"gt"</span>, <span class="text-green-400">"tidycensus"</span></span>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-slate-600 select-none">5</span>
+            <span>))</span>
+          </div>
+        </div>
+      </div>
+      <p class="font-label text-sm text-on-surface-variant mt-4 italic">This may take several minutes — that is normal. R is downloading and compiling all the packages at once.</p>
+    </section>
+
+    <!-- Step 4: Installing the Tutorials -->
+    <section class="mb-20 scroll-mt-24" id="tutorials-install">
+      <div class="flex items-baseline gap-4 mb-8">
+        <span class="font-headline text-5xl font-extralight text-outline-variant">04</span>
+        <h2 class="font-headline text-3xl font-bold text-primary uppercase tracking-tight">Installing the Tutorials</h2>
+      </div>
+      <p class="font-body text-xl mb-8 leading-relaxed">
+        The tutorials live on GitHub as an R package. Once <code class="font-mono text-sm bg-surface-container px-1 py-0.5 rounded text-secondary">remotes</code> is installed, run this command to fetch all 28 lessons:
+      </p>
+      <div class="bg-primary rounded-xl overflow-hidden code-shadow mb-8">
+        <div class="bg-white/5 px-4 py-2 border-b border-white/5 flex items-center justify-between">
+          <div class="flex gap-1.5">
+            <div class="w-2.5 h-2.5 rounded-full bg-error"></div>
+            <div class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></div>
+            <div class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></div>
+          </div>
+          <span class="text-[10px] font-label text-on-primary-container tracking-widest uppercase">R Console</span>
+        </div>
+        <div class="p-8 font-mono text-sm leading-relaxed text-blue-300">
+          <div class="flex gap-4">
+            <span class="text-slate-600 select-none">1</span>
+            <span><span class="text-orange-400 italic"># Install the Data Journalism Tutorials from GitHub</span></span>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-slate-600 select-none">2</span>
+            <span>remotes::install_github(<span class="text-green-400">"mattwaite/DataJournalismTutorials"</span>)</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-8">
+        <div class="flex-1">
+          <h3 class="font-headline font-bold text-xl mb-4">Finding the Tutorials in RStudio</h3>
+          <p class="font-body text-lg text-on-surface-variant">Once installed, look at the <strong>top-right pane</strong> in RStudio. Click the <span class="font-bold text-primary">Tutorial</span> tab to see all 28 lessons listed and ready to launch.</p>
+        </div>
+        <div class="flex-none w-px bg-outline-variant/20 hidden md:block"></div>
+        <div class="flex-1">
+          <div class="bg-tertiary-fixed p-6 rounded-xl">
+            <div class="flex items-center gap-2 mb-2">
+              <span class="material-symbols-outlined text-on-tertiary-fixed-variant">tips_and_updates</span>
+              <span class="font-headline font-bold text-on-tertiary-fixed text-xs uppercase tracking-wider">Pro Tip</span>
+            </div>
+            <p class="text-sm font-label text-on-tertiary-fixed-variant leading-snug">If the Tutorial tab is empty after installation, <strong>restart RStudio</strong>. The software needs to index the new library files on first launch.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8">
+        <img alt="RStudio Tutorial tab showing Data Journalism tutorials" class="w-full rounded-xl border border-outline-variant/10" src="images/tutorialscreen.png"/>
+      </div>
+    </section>
+
+    <!-- Step 5: Localization -->
+    <section class="mb-20 scroll-mt-24" id="localization">
+      <div class="flex items-baseline gap-4 mb-8">
+        <span class="font-headline text-5xl font-extralight text-outline-variant">05</span>
+        <h2 class="font-headline text-3xl font-bold text-primary uppercase tracking-tight">Localization</h2>
+      </div>
+      <p class="font-body text-xl mb-8 leading-relaxed">
+        Every tutorial uses data localized to your state. By default, you get Nebraska data (the tutorials were built there — sorry). Set your own state by editing your R environment file:
+      </p>
+      <div class="bg-slate-900 text-slate-300 p-8 rounded-xl relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-transparent pointer-events-none"></div>
+        <h3 class="font-headline text-2xl font-bold text-white mb-4">Editing .Renviron</h3>
+        <p class="font-body text-lg mb-8 text-slate-400">
+          The <code class="font-mono text-blue-400 bg-black/30 px-1 rounded">.Renviron</code> file stores environment variables that load every time R starts. Add your state code once and the tutorials will use your state's data permanently.
+        </p>
+        <ol class="space-y-6 relative z-10">
+          <li class="flex gap-4">
+            <span class="flex-none w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">1</span>
+            <div>
+              <p class="font-headline font-bold text-white mb-1">Open your environment file</p>
+              <p class="text-sm text-slate-400 mb-2">Run this in the R console (you'll need the <code class="text-blue-400">usethis</code> package — install it with <code class="text-blue-400">install.packages("usethis")</code> if needed):</p>
+              <code class="bg-black/40 px-3 py-2 rounded-lg block text-blue-400 font-mono text-sm border border-white/5">usethis::edit_r_environ()</code>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="flex-none w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">2</span>
+            <div>
+              <p class="font-headline font-bold text-white mb-1">Add your state postal code</p>
+              <p class="text-sm text-slate-400 mb-2">Add the following line to the file that opens, replacing <code class="text-blue-400">NE</code> with your two-letter state postal code:</p>
+              <code class="bg-black/40 px-3 py-2 rounded-lg block text-green-400 font-mono text-sm border border-white/5">tutorial.state = "NE"</code>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="flex-none w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-xs">3</span>
+            <div>
+              <p class="font-headline font-bold text-white mb-1">Save &amp; Restart</p>
+              <p class="text-sm text-slate-400">Press Cmd+S (or Ctrl+S) to save the file, then restart RStudio to apply the change. Your tutorials will now load data for your state.</p>
+            </div>
+          </li>
+        </ol>
+        <div class="mt-8 p-4 bg-on-tertiary-container/10 border border-on-tertiary-container/30 rounded-lg">
+          <p class="text-sm font-label text-on-tertiary-container">
+            <span class="font-bold">Note:</span> Use the two-letter postal abbreviation for your state (NE, CA, TX, NY, etc.), not the full state name. If you don't set a state, all tutorials will default to Nebraska — that's where the tutorials were built.
+          </p>
+        </div>
+      </div>
+
+      <!-- Verify it worked -->
+      <div class="mt-10">
+        <h3 class="font-headline font-bold text-xl mb-4">Verify it worked</h3>
+        <p class="font-body text-lg text-on-surface-variant mb-4">Open the Tutorial tab, find <strong>The Basics</strong>, and click <span class="font-bold text-primary">Start Tutorial</span>. In the section called <em>The Goal</em>, you should see a welcome message that includes your state's name.</p>
+        <div class="bg-surface-container p-6 rounded-xl">
+          <p class="font-body text-lg italic text-on-surface-variant">"Welcome, student from <span class="text-secondary font-semibold not-italic">[Your State]</span> …"</p>
+        </div>
+        <p class="font-body text-lg text-on-surface-variant mt-4">If you see Nebraska instead of your state, something went wrong — go back and try the steps above again. And if Nebraska actually <em>is</em> your state, congratulations: you can do nothing. Welcome, Husker. You're going to love it here.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<footer class="w-full py-12 px-8 mt-20 bg-slate-100">
+  <div class="grid grid-cols-1 md:grid-cols-2 items-center max-w-7xl mx-auto">
+    <div>
+      <div class="font-headline font-black uppercase tracking-widest text-slate-900 mb-2">
+        The Art of Data Journalism
+      </div>
+      <p class="font-body text-sm italic text-slate-500">&copy; 2025 Matt Waite. Open source under GPL-3.0.</p>
+    </div>
+    <div class="flex flex-wrap gap-8 md:justify-end mt-8 md:mt-0 font-body text-sm">
+      <a class="text-slate-500 hover:text-slate-800 transition-opacity" href="curriculum.html">Curriculum</a>
+      <a class="text-slate-500 hover:text-slate-800 transition-opacity" href="data.html">Datasets</a>
+      <a class="text-slate-500 hover:text-slate-800 transition-opacity" href="https://github.com/mattwaite/DataJournalismTutorials" target="_blank" rel="noopener">GitHub</a>
+      <a class="text-slate-500 hover:text-slate-800 transition-opacity" href="feedback.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
