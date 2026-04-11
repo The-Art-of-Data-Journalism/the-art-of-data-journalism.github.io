@@ -145,9 +145,11 @@
           <span class="font-headline text-on-primary-container text-xs font-bold tracking-widest uppercase">Console Output</span>
         </div>
         <code class="text-on-primary-container text-sm font-mono block">
-          ggplot(data, aes(x=date, y=value)) +<br/>
-          geom_line(color="#256df0") +<br/>
-          theme_minimal()
+          ggplot() +<br/>
+          &nbsp;&nbsp;geom_point(data=colleges,<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;aes(x=COSTT4_A, y=C150_4), color="grey") +<br/>
+          &nbsp;&nbsp;geom_point(data=state_colleges,<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;aes(x=COSTT4_A, y=C150_4), color="red")
         </code>
       </div>
     </div>
