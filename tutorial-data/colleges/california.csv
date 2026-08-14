@@ -1,21 +1,21 @@
 INSTNM,UGDS,TUITIONFEE_IN,TUITIONFEE_OUT,COSTT4_A,C150_4
-California Polytechnic State University-San Luis Obispo,20976,10319,28229,29680,0.8547
-California State Polytechnic University-Pomona,25080,7439,19319,21655,0.6632
-California State University-Fresno,20985,6663,18543,17508,0.5623
-California State University-Fullerton,35249,7007,18887,17337,0.693
-California State University-Long Beach,32780,6884,18764,18983,0.7265
-California State University-Los Angeles,22690,6805,18685,17010,0.5143
-California State University-Northridge,32103,7069,18949,19585,0.5599
-California State University-Sacramento,28544,7484,19364,21396,0.5446
-University of California-Berkeley,32475,14395,44467,41130,0.9403
-University of California-Davis,31512,14858,44930,36975,0.8634
-University of California-Irvine,28651,13939,44011,34731,0.8661
-University of California-Los Angeles,32423,13401,43473,35689,0.9248
-University of California-Riverside,22842,13874,43946,34100,0.7602
-University of California-San Diego,33092,14906,44978,35274,0.8773
-University of California-Santa Barbara,23419,14617,44689,36607,0.8567
-San Diego State University,31810,8174,20054,23482,0.7801
-San Francisco State University,21035,7524,19404,23609,0.5469
-San Jose State University,26735,7899,19779,24114,0.6842
-University of Southern California,20505,64726,64726,81298,0.925
-Ashford University,26113,13160,13160,30106,0.0961
+California Polytechnic State University-San Luis Obispo,21996,13596,34665,32265,0.864
+California State Polytechnic University-Pomona,25042,7780,20380,23955,0.6843
+California State University-Fresno,21605,7350,19950,20095,0.5696
+California State University-Fullerton,38546,7470,20070,18269,0.7018
+California State University-Long Beach,35924,7350,19950,22679,0.6888
+California State University-Los Angeles,19562,7160,19760,18403,0.5298
+California State University-Northridge,32691,7458,20058,20485,0.5695
+California State University-Sacramento,28350,8018,20618,22945,0.5629
+University of California-Berkeley,33068,16347,50547,45619,0.9284
+University of California-Davis,32253,16774,50974,41238,0.8567
+University of California-Irvine,30197,15722,49922,38632,0.8687
+University of California-Los Angeles,33475,15203,49403,38614,0.9262
+University of California-Riverside,22593,15606,49806,38942,0.7596
+University of California-San Diego,34948,16758,50958,38701,0.8605
+University of California-Santa Barbara,23113,16414,50614,41573,0.8303
+University of California-Santa Cruz,17940,16005,50205,41179,0.7509
+San Diego State University,35377,8728,21328,27780,0.7643
+San Francisco State University,18639,7950,20550,26488,0.5037
+San Jose State University,27601,8410,21010,26593,0.6922
+University of Southern California,20443,72097,72097,90300,0.9183
